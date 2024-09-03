@@ -51,7 +51,7 @@ jobs:
             flags: meson-latest FAILURE-OK
     steps:
       - name: fetch dist
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
       - name: set PATH
         run: |
           echo "$HOME/.local/bin" >> $GITHUB_PATH
