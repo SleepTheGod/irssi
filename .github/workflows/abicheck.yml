@@ -89,12 +89,12 @@ jobs:
         run: |
           sudo apt install abigail-tools
       - name: fetch base build
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: base.inst
           path: base
       - name: fetch merge build
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: merge.inst
           path: merge
